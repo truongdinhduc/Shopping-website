@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href=""><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------------------------->
+    <div class="account">
+        <div class="form-img">
+            <img src="images/image1.png" width="100%">
+        </div>
+        <div class="form">
+            <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="Indi">
+            </div>
+            <form id="login">
+                <input type="text" placeholder="Usernamde">
+                <input type="password" placeholder="Password">
+                <button type="submit" class="">Login</button>
+                <p><a href="" style="font-size: 14px;">Forgot password</a></p>
+            </form>
+            <form id="register">
+                <input type="text" placeholder="Usernamde">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button type="submit" class="">Register</button>
+            </form>
+        </div>
+    </div>
+    <!---------------------------------------------------------------->
+    <div class="footer">
+        <div class="footer-component1">
+            <p style="margin-top: 20px;margin-bottom: 20px;"><b>Download our app</b></p>
+            <img src="images/play-store.png">
+            <img src="images/app-store.png">
+        </div>
+        <div class="footer-component1">
+            <img style="margin-top: 60px;" src="images/logo-white.png">
+            <p style="margin-top: 20px;margin-bottom: 20px;">Out purpose is to sustainably make the pleasure and benefit of sports accessiable to the many</p>
+        </div>
+        <div class="footer-component2">
+            <p style="margin-top: 70px;margin-bottom: 20px;"><b>Usefull links</b></p>
+            <a></p>Coupons</a>
+            <a>Blog post</a>
+            <a>Return policy</a>
+            <a>Join affiliate</a>
+        </div>
+        <div class="footer-component2">
+            <p style="margin-top: 70px;margin-bottom: 20px;"><b>Follow us</b></p>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("Indi");
+
+        function login(){
+            x.style.right="0";
+            y.style.right="300px";
+            z.style.margin="8px 0 0 57px";
+        }
+        function register(){
+            x.style.right="-300px";
+            y.style.right="0";
+            z.style.margin="8px 0 0 161px";
+        }
+    </script>
+</body>
